@@ -9,6 +9,7 @@
     <title>Document</title>
 </head>
 <body>
+    
     <div class="header">
         <img src="man.webp" alt="">
     </div>
