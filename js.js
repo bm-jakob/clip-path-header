@@ -1,6 +1,6 @@
 $(window).scroll(function() {
    // for big version
-   if ($(this).scrollTop() > 570){
+   if ($(this).scrollTop() > 450){
    // for small version
    // if ($(this).scrollTop() > 270){
        $('.header').addClass("small");
