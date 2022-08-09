@@ -11,7 +11,7 @@ body {
     display: block;
     position: relative;
     width: 100%;
-    background-color: red;
+    background: linear-gradient(135deg, rgba(220,7,25,1) 0%, rgba(66,65,243,1) 100%);
     transition: clip-path 0.175s, margin 0.175s;
         
     // for big version
