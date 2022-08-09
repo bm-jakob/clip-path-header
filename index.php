@@ -11,10 +11,10 @@
 <body>
     
     <div class="header">
-        <svg width="0%" height="0%">
+        <svg width="0%" height="0%" preserveAspectRatio="none">
         <defs>
-            <clipPath id="myClip">
-            <path id="myclippath" data-name="Path 36" class="cls-1" d="M6680,700.656s231.877-162.744,558.357-170.693S7662.272,610.971,7913.2,601.6,8280,472.654,8280,472.654V.656H6680Z" transform="translate(-6680 -0.656)"/>
+            <clipPath id="myClip" clipPathUnits="objectBoundingBox" transform="scale(0.000630,0.0013888888888889)">
+            <path id="myclippath" d="M6680,700.656s231.877-162.744,558.357-170.693S7662.272,610.971,7913.2,601.6,8280,472.654,8280,472.654V.656H6680Z" transform="translate(-6680 -0.656)"/>
             </clipPath>
         </defs>
         </svg> 

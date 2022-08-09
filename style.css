@@ -15,6 +15,7 @@ body {
 .header {
   display: block;
   position: relative;
+  height: 700px;
   width: 100%;
   background: linear-gradient(135deg, #dc0719 0%, #4241f3 100%);
   -webkit-transition: margin 0.175s, -webkit-clip-path 0.175s;
@@ -23,7 +24,6 @@ body {
   transition: clip-path 0.175s, margin 0.175s, -webkit-clip-path 0.175s;
   -webkit-clip-path: url(#myClip);
   clip-path: url(#myClip);
-  height: 700px;
 }
 
 .header > img {
