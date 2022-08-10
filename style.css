@@ -45,7 +45,3 @@ body {
   bottom: -170px;
   opacity: 0;
 }
-
-.header.small #myclippath {
-  d: path("M6680,700s700-0,700-0S7662.272,700,7913.2,700,8280,700,8280,700V.656H6680Z");
-}

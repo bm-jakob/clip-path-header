@@ -1,14 +1,39 @@
-$(window).scroll(function() {
-   // for big version
-   if ($(this).scrollTop() > 450){
-   // for small version
-   // if ($(this).scrollTop() > 270){
-       $('.header').addClass("small");
-    } else {
-       $('.header').removeClass("small");
-    }
- });
+// $(window).scroll(function() {
+//    // for big version
+//    if ($(this).scrollTop() > 450){
+//    // for small version
+//    // if ($(this).scrollTop() > 270){
+//        $('.header').addClass("small");
+//     } else {
+//        $('.header').removeClass("small");
+//     }
+//  });
 
+   const shape = 'M6680,700s700-0,700-0S7662.272,700,7913.2,700,8280,700,8280,700V.656H6680Z';
+const initialShape = 'M6680,700.656s231.877-162.744,558.357-170.693S7662.272,610.971,7913.2,601.6,8280,472.654,8280,472.654V.656H6680Z';
+
+
+gsap.to('#myclippath', {
+   attr: { d: shape },
+   duration: 1, 
+   scrollTrigger: {
+      markers: true, 
+      start: '88% 10%',
+      end: '90% 8%',
+      scrub: true,
+      ease: Power4.easeIn,
+      trigger: '.header'
+   }
+})
+
+
+// $('.header').addClass("small");
+//    } else {
+//       $('.header').removeClass("small");
+//       gsap.to('#myclippath', {
+//          attr: { d: initialShape }
+//       })
+//    }
 
 // kan måske bruges til at kovertere SVG path til polygon i %
 // https://gist.github.com/lostfictions/65570a178fb095829637da2b4742fa11
@@ -30,3 +55,8 @@ $(window).scroll(function() {
 // }).join(', ')
 
 // console.log(`clip-path: polygon(${res});`)
+
+$( document ).ready(function() {
+
+
+});
