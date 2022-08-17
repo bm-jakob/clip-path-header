@@ -21,8 +21,8 @@ gsap.to('#myclippath', {
    scrollTrigger: {
       // trigger: '.header',
       // markers: true, 
-      start: '450 top',
-      end: '600 600',
+      start: '500 top',
+      end: '700 700',
       ease: Power0.easeInOut,
       toggleActions: 'play none none reverse'
    }
@@ -30,8 +30,8 @@ gsap.to('#myclippath', {
 
 gsap.to('.header', {
    scrollTrigger: {
-      start: '450 top',
-      end: '600 600',
+      start: '500 top',
+      end: '700 700',
       // trigger: '.header',
       toggleActions: 'play none none reverse',
       onEnter: () => myfunction(),
