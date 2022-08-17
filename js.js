@@ -1,6 +1,6 @@
 // $(window).scroll(function() {
 //    // for big version
-//    if ($(this).scrollTop() > 450){
+//    if ($(this).scrollTop() > 425){
 //    // for small version
 //    // if ($(this).scrollTop() > 270){
 //        $('.header').addClass("small");
@@ -9,22 +9,39 @@
 //     }
 //  });
 
-   const shape = 'M6680,700s700-0,700-0S7662.272,700,7913.2,700,8280,700,8280,700V.656H6680Z';
+const shape = 'M6680,700s700-0,700-0S7662.272,700,7913.2,700,8280,700,8280,700V.656H6680Z';
 const initialShape = 'M6680,700.656s231.877-162.744,558.357-170.693S7662.272,610.971,7913.2,601.6,8280,472.654,8280,472.654V.656H6680Z';
 
+var header = document.querySelector('.header');
 
 gsap.to('#myclippath', {
    attr: { d: shape },
-   duration: 1, 
+   duration: 0.175,
+   // delay: 0,
    scrollTrigger: {
-      markers: true, 
-      start: '88% 10%',
-      end: '90% 8%',
-      scrub: true,
-      ease: Power4.easeIn,
-      trigger: '.header'
+      // trigger: '.header',
+      // markers: true, 
+      start: '450 top',
+      end: '600 600',
+      ease: Power0.easeInOut,
+      toggleActions: 'play none none reverse'
    }
 })
+
+gsap.to('.header', {
+   scrollTrigger: {
+      start: '450 top',
+      end: '600 600',
+      // trigger: '.header',
+      toggleActions: 'play none none reverse',
+      onEnter: () => myfunction(),
+      onLeaveBack: () => myfunction(),
+   }
+})
+
+function myfunction() {
+   header.classList.toggle('small')
+ };
 
 
 // $('.header').addClass("small");
